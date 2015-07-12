@@ -4,7 +4,7 @@
 </head>
 <body>
 Hello world
-<a href=".\nodeSection\index.html">Go to node section</a>
+<a href="\nodeSection\index.html">Go to node section</a>
 </body>
 </html>
 
