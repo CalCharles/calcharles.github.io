@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Caleb Chuck Webpage</title>
+    <title>Cleaning LfD</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-dark.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -31,7 +31,7 @@
 
       <section>
         <div id="title">
-          <h1>Webpage Caleb Chuck</h1>
+          <h1>Data Cleaning for Learning from Demonstration project</h1>
           <p></p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/CalCharles">CalCharles</a></span>
@@ -39,32 +39,46 @@
         </div>
 
         <h3>
-<a id="personalInfo" href="#personalInfo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Personal Information</h3>
+<a id="Abstract" href="#Abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General Description</h3>
 
 <p>
+Hard to learn data points often produce high test errors, and trajectories with especially high numbers of
 
+these hard to learn data point have the potential to be more dirty. However, determining whether these
+
+hard to learn trajectories are hard to learn because they are necessarily more complex, or because they are
+
+dirty, is hard for a learning model to determine automatically. Thus, in these cases we employ the user to
+
+compare this cleaning method with the data. I propose an iterative meta-algorithm, loosely derived from
+
+ActiveClean [1], which iterates between the three steps:
+
+Step 1:​ Determine hard data points using the cross-validation test error of the learned model
+
+Step 2:​ The human is displayed these hard states, and corrects them based on either: choosing the
+
+regressed delta, producing a new delta, removing the data point or keeping the data point.
+
+Step 3:​ Using the human actions a model is learned that discriminates hard data (kept points) from dirty
+
+data (removed, or modified deltas). Use the new dataset for the next iteration, preferring dirty points.
 </p>
 
+
+
+<a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><h3>Research videos of final performance</h3>
+<h2>Description of Process (to be added)</h2>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> -->
+<h2>Video of improved policy (to be added)</h2>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> -->
+
 <h3>
-    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publications
+    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Final Paper (to be added)
 </h3>
-      <ul>
+    <!--   <ul>
           <li><a href='https://berkeleyautomation.github.io/HierSupCASE/'>Hierarchy of Supervisors for Grasping in Clutter </a></li>
-          <li><a href='https://berkeleyautomation.github.io/lfd_icra2017/'>Human Centric Robot Centric Grasping</a></li>
-      </ul>
-
-<a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Link to my page of research videos</h3>
-<a href='http://calcharles.github.io/videos/'>Research videos at University of California, Berkeley</a>
-<h2>Featured Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe>
-
-<a id="Coursework" href="#Coursework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Pages</h3>
-  <ul>
-      <li><a href='http://calcharles.github.io/cs184/'>Computer Graphics images and videos</a></li>
-      <li><a href='http://calcharles.github.io/object_finder/'>Locating a hidden object using the Zumy and overhead localization</a></li>
-      <li><a href='http://calcharles.github.io/lfd_clean/'>Data Cleaning for Learning from Demonstration</a></li>
-      <li><a href='http://calcharles.github.io/InfoBottle/'>Literature Survey on the information bottleneck</a></li>
-  </ul>
+      </ul> -->
 
 <!-- <a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Link to my page of research videos</h3> -->
 
