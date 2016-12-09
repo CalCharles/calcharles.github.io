@@ -43,25 +43,18 @@
 
 <p>
 Hard to learn data points often produce high test errors, and trajectories with especially high numbers of
-
 these hard to learn data point have the potential to be more dirty. However, determining whether these
-
 hard to learn trajectories are hard to learn because they are necessarily more complex, or because they are
-
 dirty, is hard for a learning model to determine automatically. Thus, in these cases we employ the user to
-
 compare this cleaning method with the data. I propose an iterative meta-algorithm, loosely derived from
-
-ActiveClean [1], which iterates between the three steps:
-
-Step 1:​ Determine hard data points using the cross-validation test error of the learned model
-
-Step 2:​ The human is displayed these hard states, and corrects them based on either: choosing the
-
+<a href='https://activeclean.github.io/'>ActiveClean</a>, proposed by Sanjay Krishnan, which iterates between the three steps:
+<br>
+<b>Step 1</b>:​ Determine hard data points using the cross-validation test error of the learned model
+<br>
+<b>Step 2</b>:​ The human is displayed these hard states, and corrects them based on either: choosing the
 regressed delta, producing a new delta, removing the data point or keeping the data point.
-
-Step 3:​ Using the human actions a model is learned that discriminates hard data (kept points) from dirty
-
+<br>
+<b>Step 3</b>:​ Using the human actions a model is learned that discriminates hard data (kept points) from dirty
 data (removed, or modified deltas). Use the new dataset for the next iteration, preferring dirty points.
 </p>
 
