@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Cleaning LfD</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
-    <link rel="stylesheet" href="../stylesheets/github-dark.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
@@ -31,7 +31,8 @@
 
       <section>
         <div id="title">
-          <h1>Data Cleaning for Learning from Demonstration project</h1>
+          <h1>Statistical Data Cleaning for Deep 
+            Learning of Automation Tasks from Demonstrations</h1>
           <p></p>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/CalCharles">CalCharles</a></span>
@@ -39,10 +40,14 @@
         </div>
 
         <h3>
-<a id="Abstract" href="#Abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General Description</h3>
+<h3>Plot of improvement results for different treatments</h3>
+<center><img width="550" height ="400"src="../images/cleaning_plots.png"></center>
+</br>
+</br>
+<h3><a id="Abstract" href="#Abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Abstract</h3>
 
 <p>
-Hard to learn data points often produce high test errors, and trajectories with especially high numbers of
+<!-- Hard to learn data points often produce high test errors, and trajectories with especially high numbers of
 these hard to learn data point have the potential to be more dirty. However, determining whether these
 hard to learn trajectories are hard to learn because they are necessarily more complex, or because they are
 dirty, is hard for a learning model to determine automatically. Thus, in these cases we employ the user to
@@ -55,30 +60,47 @@ compare this cleaning method with the data. I propose an iterative meta-algorith
 regressed delta, producing a new delta, removing the data point or keeping the data point.
 <br>
 <b>Step 3</b>:​ Using the human actions a model is learned that discriminates hard data (kept points) from dirty
-data (removed, or modified deltas). Use the new dataset for the next iteration, preferring dirty points.
+data (removed, or modified deltas). Use the new dataset for the next iteration, preferring dirty points. -->
+Automation using deep learning from demonstrations
+requires many training examples. Gathering this data is
+time consuming and expensive, and human demonstrators are
+prone to inconsistencies and errors that can delay or degrade
+learning. This paper explores how characterizing supervisor
+inconsistency and correcting for this noise can improve task
+performance with a limited budget of data. We consider
+a planar part extraction task (separating one part from a
+group) where human operators provide demonstrations by
+teleoperating a 2DOF robot. We analyze 30,000 image-control
+pairs from 480 trajectories. After error corrections, trained
+CNN models show an improvement of 11.2% upon the baseline
+in mean absolute success rate.
 </p>
 
 
-
-<a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><h3>Research videos of final performance</h3>
-<h4>Plot of improvement results for different treatments</h4>
-<img width="300" height ="300"src="../images/cleaning_plots.png">
-<h4>Description of Process (to be added)</h4>
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> -->
-<h4>Video of improved policy (to be added)</h4>
+<!-- <center><a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><h3>Research videos of final performance</h3>
+ -->
+<!-- <h4>Description of Process (to be added)</h4>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> 
+ <h4>Video of improved policy (to be added)</h4> -->
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> -->
 
 <h3>
-    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Final Paper (to be added)
+    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> Final Paper submitted to IEEE CASE 2017
 </h3>
       <ul>
-          <li><a href='../files/ProposalLfdClean.pdf'>Preliminary Proposal</a></li>
+          <li><a href='http://goldberg.berkeley.edu/pubs/2017-Chuck-LfD_Cleaning_CASE_CAMERA_READY.pdf'>Link to Final Paper</a></li>
       </ul>
 
 <!-- <a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Link to my page of research videos</h3> -->
 
 
+<h3>
+    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> Authors and Contributions
+</h3>
 
+<p>Caleb Chuck, Michael Laskey, Sanjay Krishnan, Ruta Joshi, Roy Fox, <a href='http://goldberg.berkeley.edu/'>Ken Goldberg</a></p>
+</br>
+</br>
 
 <p>Please contact Caleb Chuck (caleb_chuck AT yahoo DOT com) for further information.</p>
       </section>
