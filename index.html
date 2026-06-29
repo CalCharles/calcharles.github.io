@@ -1,101 +1,482 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Caleb Chuck Webpage</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caleb Chuck</title>
+  <link rel="stylesheet" href="stylesheets/academic.css">
+</head>
+<body>
+  <div class="container">
 
-  </head>
-  <body>
-      <!-- <div id="header">
-        <nav>
-          <li><a href="https://github.com/CalCharles/calcharles.github.io">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/BerkeleyAutomation/lfd_icra2017/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/BerkeleyAutomation/lfd_icra2017/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div> -->
+    <!-- ── Profile ── -->
+    <header class="profile">
+      <img class="profile-pic" src="images/CalebChuckMugShot.JPG" alt="Caleb Chuck">
+      <div class="profile-info">
+        <h1>Caleb Chuck</h1>
+        <p class="subtitle">Postdoctoral Researcher &middot; Princeton University &middot; RL Lab</p>
+        <!-- <p class="subtitle">PhD Student &middot; UT Austin &middot; PeARL Lab</p> -->
+        <p class="interests">Reinforcement Learning &middot; Causality &middot; Robotic Manipulation &middot; Representation Learning</p>
+        <div class="profile-links">
+          <a href="mailto:caleb_chuck@yahoo.com">Email</a>
+          <span class="link-sep">/</span>
+          <a href="https://github.com/CalCharles" target="_blank">GitHub</a>
+          <span class="link-sep">/</span>
+          <a href="https://pearl.cs.utexas.edu/" target="_blank">PeARL Lab</a>
+          <span class="link-sep">/</span>
+          <a href="http://calcharles.github.io/videos/">Research Videos</a>
+        </div>
+      </div>
+    </header>
 
-    <div class="wrapper">
+    <!-- ── About ── -->
+    <section class="about">
+      <p>
+        I am a Postdoctoral Researcher at Princeton University in the <a href="">Princeton RL Lab</a>
+        working with Professor Benjamin Eysenbach. I received my PhD from the University of Texas at Austin,
+        delightfully co-advised by Professor Scott Niekum in the
+        <a href="https://pearl.cs.utexas.edu/" target="_blank">Personal Autonomous Robotics Lab (PeARL)</a>
+        and Professor Amy Zhang in the <a href="https://midi-lab.github.io/" target="_blank">Machine Intelligence and Decisionmaking Lab</a>,
+        while also working with Professor Yuke Zhu and the <a href="https://rpl.cs.utexas.edu/" target="_blank">Robotic Perception and Learning Lab</a>.
+        My research focuses on developing unsupervised hierarchical and factorized methods for robotic manipulation
+        and sequential decision-making, with interests in reinforcement learning, causal reasoning, skill discovery,
+        and representation learning. I am broadly interested in how robots can better complement and collaborate
+        with humans through factorized representations of the world. I am currently investigating the question:
+        How can we enable agents with directed exploration so that they can meaningfully understand, explain,
+        and improve both their and our decision-making?
+      </p>
+    </section>
 
-      <section>
-        <div id="title">
-          <h1>Webpage Caleb Chuck</h1>
-          <p></p>
-          <center><img width="200" height ="200 "src="./images/CalebChuckMugShot.JPG"></center>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/CalCharles">CalCharles</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+    <!-- ── Publications ── -->
+    <section class="publications">
+      <h2 class="section-heading">Publications</h2>
+
+      <!-- 2025–2026 -->
+      <div class="year-group">
+        <div class="year-label">2025 &ndash; 2026</div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/rlzero.png" alt="RLZero teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/pdf/2412.05718" target="_blank">RLZero: Direct Policy Inference from Language Without In-Domain Supervision</a>
+            </div>
+            <p class="pub-authors">
+              Harshit Sikchi, Siddhant Agarwal, Pranaya Jajoo, Samyak Parajuli,
+              <strong>Caleb Chuck</strong>, Max Rudolph, Peter Stone, Amy Zhang, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">NeurIPS 2025</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2412.05718" target="_blank">PDF</a>
+            </div>
+          </div>
         </div>
 
-        <h3>
-<a id="personalInfo" href="#personalInfo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Personal Information</h3>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/mused-fm.png" alt="MuSED-FM teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://openreview.net/pdf?id=qmtcxAPQu8" target="_blank">MuSED-FM: A Benchmark For Evaluating Multivariate Time Series Foundation Models</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Sai Shankar Narasimhan, Shubhankar Agarwal, Aditya Narayanan,
+              Avantika Gupta, Raghav Mallampalli, Fan Feng, Anthony Bao, Jeffrey B. Lai,
+              William Gilpin, Sandeep P. Chinchali, Sujay Sanghavi
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Preprint</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://openreview.net/pdf?id=qmtcxAPQu8" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
 
-<p>
-I am a PhD student at the University of Texas at Austin studying Computer Science. I am working in the Personal Autonomous Robotics Lab (PeARL) with Professor Scott Niekum. I am interested in better understanding how robots can complement humans. I am developing hierarchical object-centric methods to improve robotic manipulation.
-</p>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/rl_unification.png" alt="RL Unification teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://openreview.net/pdf?id=tQtO75p5HA" target="_blank">A Unified Framework for Unsupervised Reinforcement Learning Algorithms</a>
+            </div>
+            <p class="pub-authors">
+              Siddhant Agarwal, <strong>Caleb Chuck</strong>, Harshit Sikchi, Jiaheng Hu,
+              Max Rudolph, Scott Niekum, Peter Stone, Amy Zhang
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">RLC 2025 Workshop</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://openreview.net/pdf?id=tQtO75p5HA" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
 
-<h3>
-    <a id="files" class="anchor" href="#files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publications
-</h3>
-      <ul>
-          <li><a href='https://arxiv.org/pdf/2412.05718'>RLZero: Direct Policy Inference from Language Without In-Domain Supervision</a></li>
-          <li><a href='https://openreview.net/pdf?id=qmtcxAPQu8'>MuSED-FM: A Benchmark For Evaluating Multivariate Time Series Foundation Models</a></li>
-          <li><a href='https://openreview.net/pdf?id=tQtO75p5HA'>A Unified Framework for Unsupervised Reinforcement Learning Algorithms</a></li>
-          <li><a href='https://arxiv.org/pdf/2505.03172'>Null Counterfactual Factor Interactions for Goal-Conditioned Reinforcement Learning</a></li>
-          <li><a href='https://hari-sikchi.github.io/dilo/'>A Dual Approach to Imitation Learning from Observations with Offline Datasets</a></li>
-          <li><a href='https://wangzizhao.github.io/SkiLD/'>SkiLD: Unsupervised Skill Discovery Guided by Factor Interactions</a></li>
-          <li><a href='https://rlairhockey.github.io/'>Robot Air Hockey: A Manipulation Testbed for Robot Learning with Reinforcement Learning</a></li>
-          <li><a href='https://arxiv.org/abs/2404.10883'>Automated Discovery of Functional Actual Causes in Complex Environments</a></li>
-          <li><a href='https://arxiv.org/abs/2403.16369'>Learning Action-based Representations Using Invariance</a></li>
-          <li><a href='https://ajdroid.github.io/assets/papers/Gaze_CC__IEEE_IVS_.pdf'>Gaze Supervision for Mitigating Causal Confusion in Driving Agents</a></li>
-          <li><a href='https://openreview.net/pdf?id=iA2KQyoun1'>Granger Causal Interaction Skill Chains</a></li>
-          <li><a href='https://pearl-utexas.github.io/ScrewNet/'>ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory</a></li>
-          <li><a href='https://arxiv.org/abs/1906.01408'>Hypothesis-Driven Skill Discovery for Hierarchical Deep Reinforcement Learning</a></li>
-          <li><a href='http://calcharles.github.io/lfd_clean/'>Data Cleaning for Learning from Demonstration</a></li>
-          <li><a href='https://berkeleyautomation.github.io/HierSupCASE/'>Hierarchy of Supervisors for Grasping in Clutter </a></li>
-          <li><a href='https://berkeleyautomation.github.io/lfd_icra2017/'>Human Centric Robot Centric Grasping</a></li>
-      </ul>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/null_counterfactual.png" alt="Null Counterfactual Factor Interactions teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/pdf/2505.03172" target="_blank">Null Counterfactual Factor Interactions for Goal-Conditioned Reinforcement Learning</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Fan Feng, Carl Qi, Chang Shi, Siddhant Agarwal, Amy Zhang, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">ICLR 2025</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2505.03172" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
 
-<a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Link to my page of <a href='http://calcharles.github.io/videos/'>research videos</a></h3>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/carl.png" alt="CARL teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/pdf/2605.26371" target="_blank">Exploiting Local Dynamics Regularity for Reusable Skills in Offline Hierarchical RL</a>
+            </div>
+            <p class="pub-authors">
+              Sarthak Dayal, Abhinav Peri, Carl Qi, Claas Voelcker, Alexander Levine,
+              <strong>Caleb Chuck</strong>, Amy Zhang
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Preprint</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2605.26371" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
 
-<!-- <a href='http://calcharles.github.io/videos/'>Research videos at University of California, Berkeley</a> -->
-<!-- <h2>Featured Video</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mMo4VSoM9S0" frameborder="0" allowfullscreen></iframe> -->
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/iwr.png" alt="IWR teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/pdf/2606.11525" target="_blank">Learning Object Manipulation from Scratch via Contrastive Interaction</a>
+            </div>
+            <p class="pub-authors">
+              Tongle Shen, <strong>Caleb Chuck</strong>, Fan Feng, Biwei Huang
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Preprint</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/pdf/2606.11525" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
 
-<a id="Coursework" href="#Coursework" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
-<h3> Project Pages</h3>
-  <ul>
-      <li><a href='https://calcharles.github.io/files/dilo_poster_final.pdf'>DILO Poster</a></li>
-      <li><a href='https://calcharles.github.io/files/SkiLDPoster.pdf'>SkiLD Poster</a></li>
-      <li><a href='https://calcharles.github.io/files/COInSPoster.pdf'>COInS Poster</a></li>
-      <li><a href='https://rlairhockey.github.io/'>Robot Air Hockey</a></li>
-      <li><a href='http://calcharles.github.io/cs184/'>Computer Graphics images and videos</a></li>
-      <li><a href='http://calcharles.github.io/object_finder/'>Locating a hidden object using the Zumy and overhead localization</a></li>
-      <li><a href='http://calcharles.github.io/InfoBottle/'>Literature Survey on the information bottleneck</a></li>
-  </ul>
+      </div><!-- /year-group 2025 -->
 
-<!-- <a id="Videos" href="#Videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A Link to my page of research videos</h3> -->
+      <!-- 2024 -->
+      <div class="year-group">
+        <div class="year-label">2024</div>
 
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/dilo.png" alt="DILO teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://hari-sikchi.github.io/dilo/" target="_blank">A Dual Approach to Imitation Learning from Observations with Offline Datasets</a>
+            </div>
+            <p class="pub-authors">
+              Harshit Sikchi, <strong>Caleb Chuck</strong>, Amy Zhang, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">CoRL 2024</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://hari-sikchi.github.io/dilo/" target="_blank">Website</a>
+              <a href="https://calcharles.github.io/files/dilo_poster_final.pdf" target="_blank">Poster</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/skild.png" alt="SkiLD teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://wangzizhao.github.io/SkiLD/" target="_blank">SkiLD: Unsupervised Skill Discovery Guided by Factor Interactions</a>
+            </div>
+            <p class="pub-authors">
+              Zizhao Wang, Jiaheng Hu, <strong>Caleb Chuck</strong>, Stephen Chen,
+              Roberto Mart&iacute;n-Mart&iacute;n, Amy Zhang, Scott Niekum, Peter Stone
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">NeurIPS 2024</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://wangzizhao.github.io/SkiLD/" target="_blank">Website</a>
+              <a href="https://calcharles.github.io/files/SkiLDPoster.pdf" target="_blank">Poster</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/airhockey.png" alt="Robot Air Hockey teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://rlairhockey.github.io/" target="_blank">Robot Air Hockey: A Manipulation Testbed for Robot Learning with Reinforcement Learning</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Carl Qi, Michael J. Munje, Shuozhe Li, Max Rudolph,
+              Chang Shi, Siddhant Agarwal, Harshit Sikchi, Abhinav Peri, Sarthak Dayal,
+              Evan Kuo, Kavan Mehta, Anthony Wang, Peter Stone, Amy Zhang, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Agile Robotics: From Perception to Dynamic Action, A Future Roadmap for Sensorimotor Skill Learning for Robot Manipulation Workshops @ ICRA 2024, </span>
+            </p>
+            <div class="pub-links">
+              <a href="https://rlairhockey.github.io/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
 
-<p>Please contact Caleb Chuck (caleb_chuck AT yahoo DOT com) for further information.</p>
-      </section>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/causes.png" alt="Automated Discovery of Functional Actual Causes teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/abs/2404.10883" target="_blank">Automated Discovery of Functional Actual Causes in Complex Environments</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Sankaran Vaidyanathan, Stephen Giguere, Amy Zhang, David Jensen, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Preprint</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2404.10883" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/actionrep.png" alt="Action-based Representations teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/abs/2403.16369" target="_blank">Learning Action-based Representations Using Invariance</a>
+            </div>
+            <p class="pub-authors">
+              Max Rudolph, <strong>Caleb Chuck</strong>, Kevin Black, Misha Lvovsky, Scott Niekum, Amy Zhang
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">RLC 2024</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2403.16369" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/gaze.jpg" alt="Gaze Supervision teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://ajdroid.github.io/assets/papers/Gaze_CC__IEEE_IVS_.pdf" target="_blank">Gaze Supervision for Mitigating Causal Confusion in Driving Agents</a>
+            </div>
+            <p class="pub-authors">
+              A. Biswas, B.A. Pardhi, <strong>C. Chuck</strong>, J. Holtz, S. Niekum, H. Admoni, A. Allievi
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">AAMAS 2024</span>
+              &nbsp;&middot;&nbsp; <em>NVIDIA Best Paper, CoRL ARRH Workshop 2022</em>
+            </p>
+            <div class="pub-links">
+              <a href="https://ajdroid.github.io/assets/papers/Gaze_CC__IEEE_IVS_.pdf" target="_blank">PDF</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/coins.png" alt="COInS teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://openreview.net/pdf?id=iA2KQyoun1" target="_blank">Granger Causal Interaction Skill Chains</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Kevin Black, Aditya Arjun, Yuke Zhu, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">TMLR 2024</span>
+              &nbsp;&middot;&nbsp; <em>RLC 2024 Journal Track</em>
+            </p>
+            <div class="pub-links">
+              <a href="https://openreview.net/pdf?id=iA2KQyoun1" target="_blank">PDF</a>
+              <a href="https://calcharles.github.io/files/COInSPoster.pdf" target="_blank">Poster</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /year-group 2024 -->
+
+      <!-- 2020–2021 -->
+      <div class="year-group">
+        <div class="year-label">2020 &ndash; 2021</div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/screwnet.png" alt="ScrewNet teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://pearl-utexas.github.io/ScrewNet/" target="_blank">ScrewNet: Category-Independent Articulation Model Estimation From Depth Images Using Screw Theory</a>
+            </div>
+            <p class="pub-authors">
+              Ajinkya Jain, Rudolf Lioutikov, <strong>Caleb Chuck</strong>, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">ICRA 2021</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://pearl-utexas.github.io/ScrewNet/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/hype.png" alt="HyPE teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://arxiv.org/abs/1906.01408" target="_blank">Hypothesis-Driven Skill Discovery for Hierarchical Deep Reinforcement Learning</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong>, Supawit Chockchowwat, Scott Niekum
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">IROS 2020</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/1906.01408" target="_blank">arXiv</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /year-group 2020-2021 -->
+
+      <!-- Earlier -->
+      <div class="year-group">
+        <div class="year-label">Earlier</div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/data_clean.png" alt="Data Cleaning for LfD">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="http://calcharles.github.io/lfd_clean/" target="_blank">Data Cleaning for Learning from Demonstration</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong> et al.
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">CASE 2017</span>
+            </p>
+            <div class="pub-links">
+              <a href="http://calcharles.github.io/lfd_clean/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/hiersup.png" alt="Hierarchy of Supervisors teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://berkeleyautomation.github.io/HierSupCASE/" target="_blank">Hierarchy of Supervisors for Grasping in Clutter</a>
+            </div>
+            <p class="pub-authors">
+              <strong>Caleb Chuck</strong> et al.
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">CASE 2016</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://berkeleyautomation.github.io/HierSupCASE/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-entry">
+          <div class="pub-image">
+            <img src="images/papers/hcrc-sampling.png" alt="Human Centric Robot Centric Grasping teaser">
+          </div>
+          <div class="pub-content">
+            <div class="pub-title">
+              <a href="https://berkeleyautomation.github.io/lfd_icra2017/" target="_blank">Human Centric Robot Centric Grasping</a>
+            </div>
+            <p class="pub-authors">
+              Michael Laskey, <strong>Caleb Chuck</strong>, Jonathan Lee, Jeffrey Mahler,
+              Sanjay Krishnan, Kevin Jamieson, Anca Dragan, Ken Goldberg
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">ICRA 2017</span>
+            </p>
+            <div class="pub-links">
+              <a href="https://berkeleyautomation.github.io/lfd_icra2017/" target="_blank">Website</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /year-group earlier -->
+
+    </section><!-- /publications -->
+
+    <!-- ── Project Pages ── -->
+    <section class="projects">
+      <h2 class="section-heading">Project Pages &amp; Posters</h2>
+      <div class="project-grid">
+        <a class="project-tag" href="https://calcharles.github.io/files/dilo_poster_final.pdf" target="_blank">DILO Poster</a>
+        <a class="project-tag" href="https://calcharles.github.io/files/SkiLDPoster.pdf" target="_blank">SkiLD Poster</a>
+        <a class="project-tag" href="https://calcharles.github.io/files/COInSPoster.pdf" target="_blank">COInS Poster</a>
+        <a class="project-tag" href="https://rlairhockey.github.io/" target="_blank">Robot Air Hockey</a>
+        <a class="project-tag" href="http://calcharles.github.io/videos/" target="_blank">Research Videos</a>
+        <a class="project-tag" href="http://calcharles.github.io/cs184/" target="_blank">Computer Graphics</a>
+        <a class="project-tag" href="http://calcharles.github.io/InfoBottle/" target="_blank">Information Bottleneck Survey</a>
+        <a class="project-tag" href="http://calcharles.github.io/object_finder/" target="_blank">Object Localization</a>
+      </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <p>
+        Caleb Chuck &mdash; <a href="mailto:caleb_chuck@yahoo.com">caleb_chuck@yahoo.com</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://github.com/CalCharles" target="_blank">GitHub</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://pearl.cs.utexas.edu/" target="_blank">PeARL Lab, UT Austin</a>
+      </p>
+    </footer>
+
+  </div><!-- /container -->
+</body>
 </html>
